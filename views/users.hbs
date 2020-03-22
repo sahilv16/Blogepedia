@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head}}
+<body>
+    {{> navbar}}
+
+    <div class="container">
+        <h1 class="text-center">{{title}}</h1>
+
+        {{!-- New User form --}}
+            {{> new_user_form}}
+
+        {{!-- List of Users --}}
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                {{#each users as |user|}}
+                <tr>
+                    <td>{{user.id}}</td>
+                    <td>{{user.name}}</td>
+                    <td>{{user.email}}</td>
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+    </div>
+</body>
+</html>

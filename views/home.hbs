@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head}}
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+</style>
+<body>
+    {{> navbar}}
+    <br><br>
+
+    {{!-- Categories  --}}
+<div class="ml-5">
+    <h2>Explore Topics</h2>
+    {{#each categories as |category|}}
+        <button type="button" class="btn btn-dark my-3 mx-3">{{category.name}}</button> 
+    {{/each}}
+    </div><br>
+
+    <div class="container">
+        {{!-- <h1 class="text-center">{{title}}</h1> --}}
+
+
+
+
+        {{!-- <h2>Read Articles</h2> --}}
+
+
+        {{!-- Article List --}}
+        {{#each articles as |article|}}
+         {{> article_card article}}
+        {{/each}}
+
+        
+        {{!-- New article Form --}}
+       
+
+    </div>
+    <div class="container">
+      <h2>Add an Article</h2>
+        
+        {{> new_article_form}}
+    </div>
+     
+</body>
+</html>

@@ -1,0 +1,84 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+{{> head}}
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Nunito:300|Roboto:400,700&display=swap');
+
+  h5{
+    font-family: 'Roboto', serif;
+    font-size: 44px;
+    color: black;
+  }
+  h6{
+    font-family: 'Roboto', serif;
+    font-size: 30px;
+    color: black;
+  }
+  p{
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 20px;
+  }
+</style>
+<body>
+
+{{> navbar}}
+<br><br>
+<div class="container"><div class="card mb-">
+  <img class="card-img-top" src="" alt="">
+  <div class="card-body">
+    <h5 class="card-title">{{article.title}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{article.subtitle}}</h6>
+    <p class="card-text">{{article.body}}</p>
+
+   {{!-- <form action="/comments" method="POST">
+    <label for="title">Heading</label>
+    <input name="title" type="text" class="form-control" id="title" placeholder="Heading">
+      <label for="message">message</label>
+      <input name="message" type="text" class="form-control" id="message" placeholder="message">
+      <button type="submit" class="btn btn-primary mb-3">Submit</button>
+   </form>
+    --}}
+     
+
+    {{!-- Comments  --}}
+<h3>Add Comments</h3>
+    <form action="/article/:id/comment" method="POST">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <input type="text" class="form-control" id="message">
+  </div>
+
+  <div class="form-group col-10">
+    <div class="row">
+      <label for="commentor" class="col-8">Commentor</label>
+      <select name="commentor_id" class="custom-select col-8" id="commentor">
+        {{#each users as |user|}}
+        <option value={{user.id}}>{{user.name}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+    
+  </div>
+</div>
+</div>
+
+<br>
+<br>
+</body>
+</html>

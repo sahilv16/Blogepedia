@@ -1,0 +1,46 @@
+<form class="row" action="/articles" method="POST">
+  <div class="form-group col-12">
+    <label for="title">Heading</label>
+    <input name="title" type="text" class="form-control" id="title" placeholder="Heading">
+  </div>
+
+  <div class="form-group col-12">
+    <label for="subtitle">Sub Heading</label>
+    <input name="subtitle" type="text" class="form-control" id="subtitle" placeholder="Sub Heading">
+  </div>
+
+
+  <div class="form-group col-12">
+    <label for="body">Article Body</label>
+    <textarea name="body"  class="form-control" id="body" placeholder="Write your article here."></textarea>
+  </div>
+
+
+  <div class="form-group col-12">
+    <div>Categories</div>
+    {{#each categories as |category|}}
+    <div class="p-2" style="display: inline-block;">
+      <input name="category" value="{{category.id}}" type="checkbox">
+      <label class="text-sm-left">{{category.name}}</label>
+    </div>
+    {{/each}}
+  </div>
+
+  
+ <div class="form-group col-10">
+    <div class="row">
+      <label for="author" class="col-2">Author</label>
+      <select name="author_id" class="custom-select col-8" id="author">
+        {{#each users as |user|}}
+        <option value={{user.id}}>{{user.name}}</option>
+        {{/each}}
+      </select>
+    </div>
+  </div>
+  
+  <div class="col" style="display: flex; align-items:end;">
+      <button type="submit" class="btn btn-primary mb-3">Submit</button>
+  </div>
+
+ 
+</form>

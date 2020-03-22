@@ -1,0 +1,19 @@
+{
+  "name": "blog_it",
+  "version": "1.0.0",
+  "description": "Blogepedia is a fullu funtional Blog WebApp where you can easily write\r and read articles. \r This web app has different categories of topics from which you can choose \r your interest.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.0",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Sahil Verma",
+  "license": "ISC"
+}

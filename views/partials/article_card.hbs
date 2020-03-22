@@ -1,0 +1,60 @@
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Nunito:300|Roboto:400,700&display=swap');
+  #artc{
+  transition: 1s;
+  color: black;
+  }
+  #artc:hover {
+    transform: scale(1.1);
+  }
+
+  #head{
+    font-family: 'Roboto', serif;
+    font-size: 24px;
+    color: black;
+  }
+  #sub{
+     font-family: 'Roboto', serif;
+    font-size: 20px;
+    color: black;
+  }
+  #para{
+    font-family: 'Nunito', sans-serif;
+    color: black;
+  }
+  #date{
+    font-family: 'Nunito', sans-serif;
+    color:rgb(51, 44, 44) ;
+  }
+  #link{
+    text-decoration: none;
+  }
+  #artc :hover{
+  }
+</style>
+<div id = "artc"class="card mb-3" style="max-width: 540px;">
+ <a id="link" href="/article/{{id}}">
+   <div class="row no-gutters">
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <p class="card-text">{{subtitle}}</p>
+        <p class="card-text">{{Body}}</p>        {{!-- <p class="card-text">{{}}</p> --}}
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjbVvL-d1RIz66ID_TrXFNh1OSJQx8pOtOcMpxIe_OhOMgvqKq" class="card-img" alt="...">
+    </div>
+  </div>
+  </a>
+
+ </div>
+ <br>
+
+
+
+
+
+
