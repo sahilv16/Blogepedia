@@ -50,3 +50,8 @@ handleBars(hbs) - Frontend <br/>
 Node - Backend <br/>
 Express - Backend
 Node
+## App Info
+### Author 
+###### Sahil Verma
+### Version
+###### 1.0.0
