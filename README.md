@@ -8,14 +8,14 @@ your interest.
 
 Adding article is very easy you just has to choose your interest in which you wanna write and easily add article but for adding an article you should be a user first. So for writing an article you should be a user so you have to go on user page add create ypur user account after that you can read and write article of your choice 
 
-# Here are some shots of WebApp :-
+## Here are some shots of WebApp :-
 ### Landing Page
 <img src="Home.png"/>
+
 ### Add Article Page
-
 <img src="addArticle.png"/>
-### Add User Page
 
+### Add User Page
 <img src="Users.png"/>
 
 
