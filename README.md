@@ -14,7 +14,7 @@ Adding article is very easy you just has to choose your interest in which you wa
 ### Add Article page
 <img src="addArticle.png"/>
 ### Add User Page
-<img src="User.png"/>
+<img src="Users.png"/>
 
 
 
