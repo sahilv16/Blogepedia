@@ -12,8 +12,10 @@ Adding article is very easy you just has to choose your interest in which you wa
 ### Landing Page
 <img src="Home.png"/>
 ### Add Article Page
+
 <img src="addArticle.png"/>
 ### Add User Page
+
 <img src="Users.png"/>
 
 
