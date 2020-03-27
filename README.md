@@ -11,7 +11,7 @@ Adding article is very easy you just has to choose your interest in which you wa
 ## here are some shots of WebApp :-
 ### Landing Page
 <img src="Home.png"/>
-### Add Article page
+## Add Article page
 <img src="addArticle.png"/>
 ### Add User Page
 <img src="Users.png"/>
