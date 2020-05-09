@@ -43,7 +43,7 @@ cd Project Directory
 npm install
 npm start
 ```
-The project will start running at port http://localhost:9988 
+The project will start runnCing at port http://localhost:9988 
 
 ## Dev Dependecies
 handleBars(hbs) - Frontend <br/>
